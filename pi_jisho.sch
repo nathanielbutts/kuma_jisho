@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector-ML:RPi_GPIO J?
+L Connector-ML:RPi_GPIO J1
 U 1 1 60D79491
 P 4250 2500
-F 0 "J?" H 5000 2787 60  0000 C CNN
+F 0 "J1" H 5000 2787 60  0000 C CNN
 F 1 "RPi_GPIO" H 5000 2681 60  0000 C CNN
 F 2 "" H 4250 2500 60  0000 C CNN
 F 3 "" H 4250 2500 60  0000 C CNN
@@ -26,10 +26,10 @@ F 3 "" H 4250 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L personal_symbol:Adafruit_PowerBoost_500_Basic U?
+L personal_symbol:Adafruit_PowerBoost_500_Basic U1
 U 1 1 60D89362
 P 8550 2750
-F 0 "U?" H 8550 2750 50  0001 C CNN
+F 0 "U1" H 8550 2750 50  0001 C CNN
 F 1 "Adafruit_PowerBoost_500_Basic" V 8077 1625 50  0000 C CNN
 F 2 "" H 8550 2750 50  0001 C CNN
 F 3 "" H 8550 2750 50  0001 C CNN
@@ -37,10 +37,10 @@ F 3 "" H 8550 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L personal_symbol:Adafruit_Micro_LiPo U?
+L personal_symbol:Adafruit_Micro_LiPo U2
 U 1 1 60D895DD
 P 9150 3500
-F 0 "U?" H 9150 3500 50  0001 C CNN
+F 0 "U2" H 9150 3500 50  0001 C CNN
 F 1 "Adafruit_Micro_LiPo" H 9478 2883 50  0000 L CNN
 F 2 "" H 9150 3500 50  0001 C CNN
 F 3 "" H 9150 3500 50  0001 C CNN
@@ -48,16 +48,14 @@ F 3 "" H 9150 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 2850 6350 2850
-Wire Wire Line
 	6150 2850 6150 2700
 Wire Wire Line
 	6150 2700 5950 2700
 $Comp
-L power:+BATT #PWR?
+L power:+BATT #PWR0101
 U 1 1 60D91883
 P 8250 2650
-F 0 "#PWR?" H 8250 2500 50  0001 C CNN
+F 0 "#PWR0101" H 8250 2500 50  0001 C CNN
 F 1 "+BATT" V 8265 2778 50  0000 L CNN
 F 2 "" H 8250 2650 50  0001 C CNN
 F 3 "" H 8250 2650 50  0001 C CNN
@@ -65,10 +63,10 @@ F 3 "" H 8250 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-BATT #PWR?
+L power:-BATT #PWR0102
 U 1 1 60D92057
 P 8250 2850
-F 0 "#PWR?" H 8250 2700 50  0001 C CNN
+F 0 "#PWR0102" H 8250 2700 50  0001 C CNN
 F 1 "-BATT" V 8265 2978 50  0000 L CNN
 F 2 "" H 8250 2850 50  0001 C CNN
 F 3 "" H 8250 2850 50  0001 C CNN
@@ -76,30 +74,14 @@ F 3 "" H 8250 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6600 2700 6350 2700
-Wire Wire Line
 	6200 2700 6200 2600
 Wire Wire Line
 	6200 2600 5950 2600
-Wire Wire Line
-	8700 4150 7850 4150
-Wire Wire Line
-	7250 4150 7250 3300
-Wire Wire Line
-	8700 4050 7650 4050
-Wire Wire Line
-	7650 4050 7650 3300
-Wire Wire Line
-	8700 4350 7850 4350
-Wire Wire Line
-	6350 4350 6350 2850
-Wire Wire Line
-	5950 2500 6350 2500
 $Comp
-L power:+5VD #PWR?
+L power:+5VD #PWR0103
 U 1 1 60D94080
 P 9250 3800
-F 0 "#PWR?" H 9250 3650 50  0001 C CNN
+F 0 "#PWR0103" H 9250 3650 50  0001 C CNN
 F 1 "+5VD" H 9265 3973 50  0000 C CNN
 F 2 "" H 9250 3800 50  0001 C CNN
 F 3 "" H 9250 3800 50  0001 C CNN
@@ -107,40 +89,16 @@ F 3 "" H 9250 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 60D94323
 P 9050 3800
-F 0 "#PWR?" H 9050 3550 50  0001 C CNN
+F 0 "#PWR0104" H 9050 3550 50  0001 C CNN
 F 1 "GND" H 9055 3627 50  0000 C CNN
 F 2 "" H 9050 3800 50  0001 C CNN
 F 3 "" H 9050 3800 50  0001 C CNN
 	1    9050 3800
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R_Small_US R1k
-U 1 1 60D952B1
-P 7450 3600
-F 0 "R1k" H 7518 3600 50  0000 L CNN
-F 1 "R_Small_US" H 7518 3555 50  0001 L CNN
-F 2 "" H 7450 3600 50  0001 C CNN
-F 3 "~" H 7450 3600 50  0001 C CNN
-	1    7450 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7450 3700 7450 4150
-Connection ~ 7450 4350
-Wire Wire Line
-	7450 4350 6350 4350
-Wire Wire Line
-	7450 3500 7450 3300
-Wire Wire Line
-	7550 3300 7450 3300
-Connection ~ 7450 3300
-NoConn ~ 6350 2700
-NoConn ~ 6350 2850
-NoConn ~ 7450 4150
 Wire Notes Line
 	7600 5200 8200 5200
 Wire Notes Line
@@ -151,49 +109,11 @@ Wire Notes Line
 	7600 4700 7600 5200
 Text Label 7650 5050 0    50   ~ 0
 BLEKeyboard
-Wire Wire Line
-	7650 4050 7650 4150
-Wire Wire Line
-	7650 4600 7750 4600
-Wire Wire Line
-	7750 4600 7750 4700
-Connection ~ 7650 4050
-Wire Wire Line
-	7850 4150 7850 4350
-Connection ~ 7850 4150
-Wire Wire Line
-	7850 4150 7650 4150
-Wire Wire Line
-	8000 4700 8000 4600
-Wire Wire Line
-	8000 4600 8750 4600
 $Comp
-L Switch:SW_DIP_x01 KB_Power_SW
-U 1 1 60D9A4C5
-P 8750 4900
-F 0 "KB_Power_SW" V 8704 5030 50  0000 L CNN
-F 1 "SW_DIP_x01" V 8795 5030 50  0000 L CNN
-F 2 "" H 8750 4900 50  0001 C CNN
-F 3 "~" H 8750 4900 50  0001 C CNN
-	1    8750 4900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 4700 8100 4650
-Wire Wire Line
-	8100 4650 8600 4650
-Wire Wire Line
-	8600 4650 8600 5200
-Wire Wire Line
-	8600 5200 8750 5200
-NoConn ~ 7850 4350
-NoConn ~ 7650 4150
-NoConn ~ 7650 4350
-$Comp
-L Switch:SW_DIP_x01 power_shutdown_sw
+L Switch:SW_DIP_x01 power_shutdown_sw1
 U 1 1 60D7D970
 P 2650 2950
-F 0 "power_shutdown_sw" V 2604 3080 50  0000 L CNN
+F 0 "power_shutdown_sw1" V 2604 3080 50  0000 L CNN
 F 1 "SW_DIP_x01" V 2695 3080 50  0000 L CNN
 F 2 "" H 2650 2950 50  0001 C CNN
 F 3 "~" H 2650 2950 50  0001 C CNN
@@ -201,10 +121,10 @@ F 3 "~" H 2650 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_DIP_x01 App_selector_sw
+L Switch:SW_DIP_x01 App_selector_sw1
 U 1 1 60D7F1D2
 P 2650 3750
-F 0 "App_selector_sw" V 2604 3880 50  0000 L CNN
+F 0 "App_selector_sw1" V 2604 3880 50  0000 L CNN
 F 1 "SW_DIP_x01" V 2695 3880 50  0000 L CNN
 F 2 "" H 2650 3750 50  0001 C CNN
 F 3 "~" H 2650 3750 50  0001 C CNN
@@ -258,34 +178,55 @@ Wire Wire Line
 	4050 3200 3900 3200
 Wire Wire Line
 	3900 3200 3900 4850
-Connection ~ 6350 2700
 Wire Wire Line
-	6350 2700 6200 2700
+	6200 2700 6600 2700
 Wire Wire Line
-	6350 2700 6350 2500
-Connection ~ 6350 2850
+	6150 2850 6600 2850
+$Comp
+L personal_symbol:Battery u?
+U 1 1 60D9597F
+P 8350 3300
+F 0 "u?" H 8350 3300 50  0001 C CNN
+F 1 "Battery" H 8578 2833 50  0000 L CNN
+F 2 "" H 8350 3300 50  0001 C CNN
+F 3 "" H 8350 3300 50  0001 C CNN
+	1    8350 3300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6350 2850 6150 2850
+	8250 3600 8000 3600
 Wire Wire Line
-	6350 2850 6350 2700
-Connection ~ 7450 4150
+	8000 3600 8000 4250
 Wire Wire Line
-	7450 4150 7450 4350
+	8450 3600 8450 3550
 Wire Wire Line
-	7450 4150 7250 4150
-Connection ~ 7650 4150
+	8450 3550 7850 3550
 Wire Wire Line
-	7650 4150 7650 4350
+	7850 3550 7850 4700
 Wire Wire Line
-	7650 4150 7450 4150
-Connection ~ 7650 4350
+	8250 3600 8250 3200
 Wire Wire Line
-	7650 4350 7450 4350
+	8250 3200 8350 3200
 Wire Wire Line
-	7650 4350 7650 4600
-Connection ~ 7850 4350
+	8350 3200 8350 2850
+Connection ~ 8250 3600
 Wire Wire Line
-	7850 4350 7650 4350
+	8350 2650 8700 2650
 Wire Wire Line
-	7850 4350 7850 4700
+	8700 2650 8700 3350
+Wire Wire Line
+	8700 3350 8450 3350
+Wire Wire Line
+	8450 3350 8450 3550
+Connection ~ 8450 3550
+Wire Wire Line
+	8450 3550 8700 3550
+Wire Wire Line
+	8700 3550 8700 4050
+Wire Wire Line
+	8700 4250 8000 4250
+Connection ~ 8000 4250
+Wire Wire Line
+	8000 4250 8000 4700
+NoConn ~ 8250 3550
 $EndSCHEMATC
